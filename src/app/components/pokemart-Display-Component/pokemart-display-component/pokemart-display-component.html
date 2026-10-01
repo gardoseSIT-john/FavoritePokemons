@@ -1,0 +1,34 @@
+<div id="Pokemart">
+
+    <div id="Pokemart_Header">
+        <div id="Pokemart_Title">
+            <h1>Pokemart</h1>
+        </div>
+    </div>
+
+    <div id="Pokemart_Items">
+
+        @for (item of pokemartService.popularItems(); track item.id) {
+
+            <div class="itemCard">
+
+                <div class="item_name">
+                    <h2>
+                        {{item.name}}: Price: {{item.price}}
+                        <button (click)="pokemartService.addToCart(item)">
+                            Add To Cart
+                        </button>
+                    </h2>
+                </div>
+
+                <div class="item_description">
+                    <p>{{item.description}}</p>
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+
+</div>

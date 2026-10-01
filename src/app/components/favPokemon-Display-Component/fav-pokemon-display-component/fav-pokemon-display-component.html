@@ -1,0 +1,104 @@
+<div id="FavoritePokemon_Johto">
+    <div id="FavoritePokemon_Header">
+        <h2>Favorite Johto Pokemons</h2>
+    </div>
+
+    <div id="FavoritePokemon_Items">
+
+        @for (mon of pokemonService.JohtoPokemons(); track $index) {
+
+            <div class="pokemonCard">
+
+                <div class="pokemonName">
+                    <h3>{{mon.name}}</h3>
+                </div>
+
+                <div class="pokemonType">
+                    <strong>Type:</strong> {{mon.type}}
+                </div>
+
+                <div class="pokemonHeldItem">
+                    <strong>Held Item:</strong> {{mon.heldItem}}
+                </div>
+
+                <div class="pokemonDescription">
+                    <p>{{mon.briefDescription}}</p>
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+</div>
+
+<div id="FavoritePokemon_Kanto">
+    <div id="FavoritePokemon_Header">
+        <h2>Favorite Kanto Pokemons</h2>
+    </div>
+
+    <div id="FavoritePokemon_Items">
+
+        @for (mon of pokemonService.KantoPokemons(); track $index) {
+
+            <div class="pokemonCard">
+
+                <div class="pokemonName">
+                    <h3>{{mon.name}}</h3>
+                </div>
+
+                <div class="pokemonType">
+                    <strong>Type:</strong> {{mon.type}}
+                </div>
+
+                <div class="pokemonHeldItem">
+                    <strong>Held Item:</strong> {{mon.heldItem}}
+                </div>
+
+                <div class="pokemonDescription">
+                    <p>{{mon.briefDescription}}</p>
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+</div>
+
+
+
+<div id="FavoritePokemon_Hoenn">
+    <div id="FavoritePokemon_Header">
+        <h2>Favorite Hoenn Pokemons</h2>
+    </div>
+
+    <div id="FavoritePokemon_Items">
+
+        @for (mon of pokemonService.HoennPokemons(); track $index) {
+
+            <div class="pokemonCard">
+
+                <div class="pokemonName">
+                    <h3>{{mon.name}}</h3>
+                </div>
+
+                <div class="pokemonType">
+                    <strong>Type:</strong> {{mon.type}}
+                </div>
+
+                <div class="pokemonHeldItem">
+                    <strong>Held Item:</strong> {{mon.heldItem}}
+                </div>
+
+                <div class="pokemonDescription">
+                    <p>{{mon.briefDescription}}</p>
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+</div>
+

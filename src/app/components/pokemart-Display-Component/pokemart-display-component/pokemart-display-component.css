@@ -1,46 +1,59 @@
-#FavoritePokemon {
+#Pokemart {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
-#FavoritePokemon_Header {
-    text-align: center;
+#Pokemart_Header {
     margin-bottom: 20px;
 }
 
-#FavoritePokemon_Header h2 {
+#Pokemart_Title {
+    text-align: center;
+}
+
+#Pokemart_Title h1 {
     margin: 0;
 }
 
-#FavoritePokemon_Items {
+#Pokemart_Items {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.pokemonCard {
+/* Individual item card */
+.itemCard {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: white;
 
+    /* Card effect */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.pokemonCard:hover {
+/* Card hover effect */
+.itemCard:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
-.pokemonName h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+.item_name h2 {
+    margin: 0;
 }
 
-.pokemonDescription p {
+.item_name button {
+    margin-left: 15px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item_description p {
     margin-bottom: 0;
     color: #555;
 }

@@ -1,0 +1,15 @@
+<div>
+    <h2>Shopping Cart</h2>
+    @for (item of pokemartService.cart();track item.id){
+        <div>{{item.name}} - G{{item.price}}</div>
+        <div>{{item.description}}</div>
+    }
+    @empty{
+        <p>Cart is empty.</p>
+    }
+    <hr>
+    <h4>
+        Total: G{{pokemartService.totalPrice()}}
+    </h4>
+    <button (click)="pokemartService.clearCart()">Clear Cart</button>
+</div>
