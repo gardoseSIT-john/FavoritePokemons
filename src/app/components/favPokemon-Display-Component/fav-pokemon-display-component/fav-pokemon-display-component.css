@@ -4,6 +4,8 @@
     padding: 20px;
     border:1px solid #ccc;
     border-radius: 10px;
+    border-spacing: 10px;
+    background-image:linear-gradient(#534714bb,#efc0047a),url("../../../img/JohtoMap.png")
 }
 
 #FavoritePokemon_Kanto {
@@ -13,7 +15,7 @@
     border:1px solid #ccc;
     border-radius: 10px;
     background-image:linear-gradient(#4c0082b9,#4c008256),
-    url("C:/Users/gardose_j/FavoritePokemons/src/app/img/PE_Kanto_Map.png")
+    url("../../../img/PE_Kanto_Map.png")
 }
 
 #FavoritePokemon_Hoenn {
